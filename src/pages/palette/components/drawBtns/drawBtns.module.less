@@ -1,0 +1,30 @@
+.draw_btns_con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+
+    .draw_btns_title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .draw_btns_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        
+        &:hover {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
