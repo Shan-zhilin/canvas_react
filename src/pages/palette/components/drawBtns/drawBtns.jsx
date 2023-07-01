@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import styles from "./drawBtns.module.less";
 import Context from "../../../../model/context";
-import {linkWebGl} from '../../../../utils'
+// import {linkWebGl} from '../../../../utils'
 
 const canvasBtns = [
   "绘制直线",
@@ -213,25 +213,25 @@ function DrawBtns() {
   };
 
   const webglDraw = (type) => {
-    const v_shader = `
-    attribute vec2 position;
+    // const v_shader = `
+    // attribute vec2 position;
 
-    void main() {
-      gl_PointSize = 1.0;
-      gl_Position = vec4(position, 1.0, 1.0);
-    }
-    `;
+    // void main() {
+    //   gl_PointSize = 1.0;
+    //   gl_Position = vec4(position, 1.0, 1.0);
+    // }
+    // `;
 
 
-    const f_shader = `
-    precision mediump float;
+    // const f_shader = `
+    // precision mediump float;
 
-    void main()
-    {
-      gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
-    }    
-    `;
-    var canvas = document.getElementById("canvas");
+    // void main()
+    // {
+    //   gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+    // }    
+    // `;
+    // var canvas = document.getElementById("canvas");
   }
 
   useEffect(() => {
