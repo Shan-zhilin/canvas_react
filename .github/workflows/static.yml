@@ -27,13 +27,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: install node.js
+      - name: 安装 node.js
         uses: actions/setup-node@v3.0.0 
         with: 
               node-version: "14.X"
-      - name: install deps
-        run: npm install
-      - name: build app
+      - name: 安装 yarn
+        run: npm install yarn
+      - name: 安装依赖
+        run: yarn add
+      - name: 打包
         run: npm run build
       - name: copy file via ssh key
         uses: appleboy/scp-action@master
