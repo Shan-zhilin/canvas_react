@@ -12,8 +12,14 @@ jobs:
   steps:
      - name: clone local repository
        uses: actions/checkout@v2
-     - name: install dependency
-       run: npm install
+     - name: 安装 node.js
+       uses: actions/setup-node@v3.0.0 
+       with: 
+            node-version: "14.X"
+     - name: 安装 yarn
+       run: npm install yarn
+     - name: 安装依赖
+       run: yarn
      - name: build
        run: npm build
      - name: deploy serverless
