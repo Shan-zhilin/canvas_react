@@ -42,7 +42,7 @@ jobs:
         with:
     #需要部署的文件地址
             SOURCE: "build/"
-            ARGS: "-rlgoDzvc -i"
+            #ARGS: "-rlgoDzvc -i"
     # SSH address  服务器地址
             REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
     # Remote dir path  服务器下部署文件存放路径
