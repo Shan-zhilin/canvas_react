@@ -20,7 +20,7 @@ function Palette() {
         </div>
       </div>
       <div className={styles.palette_bottom}>
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">CopyRight版权所有-XIJIAN 皖ICP备2023010880号-1</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">CopyRight@2023版权所有-XIJIAN 皖ICP备2023010880号-1</a>
       </div>
     </div>
   );
